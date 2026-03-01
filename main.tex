@@ -1,0 +1,39 @@
+\documentclass{classes/thesis}
+
+\begin{document}
+
+\pagenumbering{roman}
+\subfile{sections/title}
+\newpage
+
+\gdef \MyChapterHead{目次}
+\tableofcontents
+\clearpage
+
+\pagestyle{preport}
+\pagenumbering{arabic}
+
+% ========== 本文 ==========
+
+\subfile{sections/abstract}
+\newpage
+
+\subfile{sections/introduction}
+\newpage
+
+\subfile{sections/theory}
+\newpage
+
+\subfile{sections/conclusion}
+\newpage
+
+% ========== 参考文献 ==========
+
+\subfile{sections/references}
+\newpage
+
+% ========== 謝辞 ==========
+
+\subfile{sections/acknowledgments}
+
+\end{document}

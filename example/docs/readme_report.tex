@@ -1,0 +1,34 @@
+\documentclass{classes/thesis}
+
+\usepackage{minted} % ソースコード表示の用パッケージ
+\setminted{frame=single, linenos=false} % mintedのグローバルオプション設定
+\usepackage{ascmac} % 囲み枠
+\usepackage{comment}
+
+\begin{document}
+
+\pagenumbering{roman}
+\subfile{example/tex/title}
+\newpage
+
+\gdef \MyChapterHead{目次}
+\tableofcontents
+\clearpage
+
+\pagestyle{preport}
+\pagenumbering{arabic}
+
+% ========== 本文 ==========
+
+% \subfile{example/tex/guide}
+% \newpage
+
+\subfile{example/tex/how_to_write}
+\newpage
+
+% ========== 参考文献 ==========
+
+\subfile{sections/references}
+\newpage
+
+\end{document}
